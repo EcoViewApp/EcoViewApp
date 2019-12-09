@@ -1,0 +1,51 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(255, 255, 255);
+}
+
+header {
+    display: flex;
+    background-color: rgb(50, 50, 50);
+    border: 2px solid rgb(40, 160, 0);
+    padding: 20px 10px;
+}
+
+.forms {
+    display: flex;
+    position: fixed;
+    right: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.btn {
+    margin: 0px 2px;
+    padding: 0px 5px;
+    text-decoration: none;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+}
+
+main {
+    text-align: center;
+}
+
+.area {
+    padding: 60px 50px;
+    margin: 30px;
+
+    background-color: #9f9f9f;
+    display: inline-block;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background-color: rgb(50, 50, 50);
+    border: 2px solid rgb(40, 160, 0);
+    padding: 5px;
+    color: rgb(255, 255, 255);
+}
