@@ -12,34 +12,22 @@
     <title>Eco View App</title>
   </head>
   <body>
-<blockquote class="blockquote text-center" style="border-radius: 5px;background-color:rgba(0,0,0,0.3);padding:5px;float:right;width:100px;margin-top:20px;margin-right: 20px;">
-  <a href="login.html" class="btn btn-success" style="font-size:18px;">Log In</a></blockquote>
+<blockquote class="blockquote text-center" style="border-radius: 5px;background-color:rgba(0,0,0,0.3);padding:5px;float:right;width:100px;margin-top:20px;margin-right: 20px;width:110px">
+  <a href="login.html" class="btn btn-success" style="font-size:18px;width:100px">Log In</a>
+    <a href="register.html" class="btn btn-success" style="font-size:18px;margin-top:10px;width:100px">Register</a></blockquote>
 <div style="clear:both"></div>
-<center><img src="Images/logo.png" class="img-fluid" alt="Responsive image" style="width:35%;float:center;margin-top:-60px"></center>
+<center><img src="Images/logo.png" class="img-fluid" alt="Responsive image" style="width:35%;float:center;margin-top:-90px"></center>
 <center><blockquote class="blockquote text-center" style="margin-top:20px;width:45%;border-radius: 20px;background-color:rgba(0,0,0,0.3);padding:10px">
   <center><p class="mb-0" style="font-size:30px;width:50%;" >Find, rate, have fun!</p></center>
   <center><p class="mb-0" style="font-size:18px;width:100%">Find any object and leave a rate to inform other people to choose the best object for them. That means also you. It takes literally a few minutes.</p></center>
 </blockquote></center>
-<div class="text-center container" style="width:50%;margin-top:20px;">
-  <div class="input-group">
+<div class="text-center container" style="width:70%;margin-top:20px;margin-bottom:10px">
 
-  <input type="text" class="form-control" aria-label="Text input with segmented dropdown button"  >
-  <div class="input-group-append" >
-
-    <button type="button" class="btn btn-success dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Search by Category<span class="sr-only">Toggle Dropdown</span>
-    </button>
-    <div class="dropdown-menu">
 <form action="get_locals.html" method="post">
-      <input type="submit" class="dropdown-item" id="restaurants" name="restaurants" value="Restaurants">
-      <input type="submit" class="dropdown-item" id="hotels" name="hotels" value="Hotels">
-      <input type="submit" class="dropdown-item" id="shoppingcentres" name="shoppingcentres" value="Shopping centres">
-      <input type="submit" class="dropdown-item" id="groceryshops" name="groceryshops" value="Grocery shops">
+  <input type="text" class="form-control" aria-label="Text input with segmented dropdown button" style="width:50%;display:inline;" >
+  <input type="submit" class="btn btn-success" id="restaurants" name="restaurants" value="Search" style="width:240px;font-size:18px;margin-bottom:10px;margin-top:5px;margin-left:-5px;">
 
 
-    </div>
-  </div>
-</div>
 <center>
 
 <input type="submit" class="btn btn-success" id="restaurants" name="restaurants" value="Restaurants" style="width:240px;margin-top:20px;font-size:18px;">
