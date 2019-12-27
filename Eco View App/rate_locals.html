@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+<link rel="icon" href="Images/logo.png" type="image/png">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" style="text/css">
 
@@ -44,16 +44,16 @@
   </ol>
   <div class="carousel-inner" >
     <div class="carousel-item active">
-      <img class="d-block w-50" src="Images/zielona.jpg" width="300px" height="400px" alt="First slide">
+      <img class="d-block w-50" src="Images/zielona.jpg" id="imgcarousel" alt="First slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-50" src="Images/outdoorzielona.jpg"  width="300px" height="400px" alt="Second slide">
+      <img class="d-block w-50" src="Images/outdoorzielona.jpg" id="imgcarousel"  alt="Second slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-50" src="Images/mealzielona.jpg"  width="300px" height="400px" alt="Third slide">
+      <img class="d-block w-50" src="Images/mealzielona.jpg" id="imgcarousel" alt="Third slide">
     </div>
     <div class="carousel-item">
-      <img class="d-block w-50" src="Images/menuzielona.jpg" width="300px" height="400px" alt="Fourth slide">
+      <img class="d-block w-50" src="Images/menuzielona.jpg" id="imgcarousel"  alt="Fourth slide">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -66,11 +66,12 @@
   </a>
 </div>
  <hr class="style2">
-<center><blockquote class="blockquote text-center" style="margin-top:20px;width:15%;border-radius: 20px;background-color:rgba(0,0,0,0.3);padding:10px;margin-top:30px">
+<center><blockquote class="blockquote text-center" id="block" style="margin-top:20px;border-radius: 20px;background-color:rgba(0,0,0,0.3);padding:10px;margin-top:30px">
   <center><p class="mb-0" style="font-size:18px;width:100%">Informations</p></center>
 </blockquote></center>
-<div class="card" style="width: 50rem;display:inline-block;margin-bottom:25px;color:#000000;margin-top:0px">
-  <img class="card-img-top" src="Images/zielona.jpg" alt="Card image cap" style="width:369px;height:246px;float:left;margin-top:-1px;margin-left:-1px">
+<table class="table table-hover">
+<div class="card" style="display:inline-block;margin-bottom:25px;color:#000000;margin-top:0px" id="cardcard">
+  <img class="card-img-top" src="Images/zielona.jpg" alt="Card image cap" style="float:left;margin-top:-1px;margin-left:-1px" id="imginfo">
 
   <ul class="list-group list-group-flush" >
     <li class="list-group-item">Restauracja</li>
@@ -87,24 +88,27 @@
     <li class="list-group-item">Total rate of meals flavorful: <b style="font-size:24px"> &nbsp;4.3/5</b></li>
   </ul>
 </div>
+</table>
+
+
  <hr class="style2">
-<center><blockquote class="blockquote text-center" style="margin-top:20px;width:15%;border-radius: 20px;background-color:rgba(0,0,0,0.3);padding:10px;margin-top:30px">
+<center><blockquote class="blockquote text-center" id="block" style="margin-top:20px;border-radius: 20px;background-color:rgba(0,0,0,0.3);padding:10px;margin-top:30px">
   <center><p class="mb-0" style="font-size:18px;width:100%">Check it on map</p></center>
 </blockquote></center>
 <div class="map-responsive">
- <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2536853.809366049!2d16.579082608896485!3d51.61594930501213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471bcac4e52cf909%3A0xc4e71af200e78146!2sZielona!5e0!3m2!1spl!2spl!4v1576605283452!5m2!1spl!2spl"
- width="800" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+ <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2536853.809366049!2d16.579082608896485!3d51.61594930501213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471bcac4e52cf909%3A0xc4e71af200e78146!2sZielona!5e0!3m2!1spl!2spl!4v1576605283452!5m2!1spl!2spl"
+  frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 </div>
 <div style="clear:both"></div>
  <hr class="style2">
- <div class="card-header" style="background-color: #17a2b8;;width:25%;font-size:26px;border-radius:5px;margin-bottom:10px">
+ <div class="card-header" id="card-heder" style="background-color: #17a2b8;font-size:26px;border-radius:5px;margin-bottom:10px">
    <button type="button" class="btn btn-info" data-container="body" data-trigger="hover" data-toggle="popover" data-placement="top" data-content="Kolory na poszczególnych kafelkach oznaczają jego ocenę nadaną przez użytkowników.
    Kolor zielony oznacza bardzo dobrą ocenę, kolor żółty średnią ocenę, natomiast kolor czerwony oznacza niską ocenę." style="padding:0px;font-size:22px;padding-left:10px;padding-right:10px;
    ;float:left;">
    ?
  </button> General rate<div style="clear:both"></div>
  </div>
- <div class="card" style="width: 25rem;display:inline-block;color:#FFFFFF;font-size:20px;border-radius:10px;margin-bottom:10px;">
+ <div class="card" id="ratecard" style="display:inline-block;color:#FFFFFF;font-size:20px;border-radius:10px;margin-bottom:10px;">
    <div class="card-header" style="background-color: #17a2b8;;">
      Meals
    </div>
@@ -114,7 +118,7 @@
      <li class="list-group-item" style="background-color:#ffc107">Local kitchen <b>&nbsp;2.5/5</b></li>
    </ul>
  </div>
- <div class="card" style="width: 25rem;display:inline-block;color:#FFFFFF;font-size:20px;border-radius:10px;margin-bottom:10px;">
+ <div class="card" id="ratecard" style="display:inline-block;color:#FFFFFF;font-size:20px;border-radius:10px;margin-bottom:10px;">
    <div class="card-header" style="background-color: #17a2b8;">
      Materials
    </div>
@@ -124,14 +128,14 @@
      <li class="list-group-item" style="background-color:#ffc107">Recycling bins &nbsp;<b>3.0/5</b></li>
    </ul>
  </div>
- <div class="card" style="width: 25rem;display:inline-block;color:#FFFFFF;font-size:20px;border-radius:10px;margin-bottom:10px;">
+ <div class="card" id="ratecard" style="display:inline-block;color:#FFFFFF;font-size:20px;border-radius:10px;margin-bottom:10px;">
    <div class="card-header" style="background-color: #17a2b8;">
       Diasbled facilities
    </div>
    <ul class="list-group list-group-flush">
      <li class="list-group-item" style="background-color:#ffc107">Blind people &nbsp;<b>1.8/5</b></li>
      <li class="list-group-item" style="background-color:#ffc107">  Deaf people &nbsp;<b>2.0/5</b></li>
-     <li class="list-group-item" style="background-color:#ef5545">  Disabled toilets &nbsp;<b>1.0/5</b></li>
+     <li class="list-group-item" style="background-color:#ef5545"> Toilets for the disabled &nbsp;<b>1.0/5</b></li>
    </ul>
  </div>
 </br>
@@ -150,7 +154,42 @@
   <tr class="table-light" >
 
     <td colspan="4"><span style="font-size:20px"> Rate this object:</span></br>
-<div id="review" style="font-size:36px"></div>
+      <section class='rating-widget'>
+
+        <!-- Rating Stars Box -->
+        <div class='rating-stars text-center'>
+          <ul id='stars'>
+            <li class='star' title='Poor' data-value='1'>
+              <i class='fa fa-star fa-fw'></i>
+            </li>
+            <li class='star' title='Fair' data-value='2'>
+              <i class='fa fa-star fa-fw'></i>
+            </li>
+            <li class='star' title='Good' data-value='3'>
+              <i class='fa fa-star fa-fw'></i>
+            </li>
+            <li class='star' title='Excellent' data-value='4'>
+              <i class='fa fa-star fa-fw'></i>
+            </li>
+            <li class='star' title='WOW!!!' data-value='5'>
+              <i class='fa fa-star fa-fw'></i>
+            </li>
+          </ul>
+        </div>
+
+        <div class='success-box'>
+          <div class='clearfix'></div>
+          <img alt='tick image' width='32' src='data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA0MjYuNjY3IDQyNi42NjciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQyNi42NjcgNDI2LjY2NzsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+CjxwYXRoIHN0eWxlPSJmaWxsOiM2QUMyNTk7IiBkPSJNMjEzLjMzMywwQzk1LjUxOCwwLDAsOTUuNTE0LDAsMjEzLjMzM3M5NS41MTgsMjEzLjMzMywyMTMuMzMzLDIxMy4zMzMgIGMxMTcuODI4LDAsMjEzLjMzMy05NS41MTQsMjEzLjMzMy0yMTMuMzMzUzMzMS4xNTcsMCwyMTMuMzMzLDB6IE0xNzQuMTk5LDMyMi45MThsLTkzLjkzNS05My45MzFsMzEuMzA5LTMxLjMwOWw2Mi42MjYsNjIuNjIyICBsMTQwLjg5NC0xNDAuODk4bDMxLjMwOSwzMS4zMDlMMTc0LjE5OSwzMjIuOTE4eiIvPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K'/>
+
+          <div class='text-message'>
+          <input type="hidden" name="rate1" id="rate1" value="0"/></div>
+          <div class='clearfix'></div>
+        </div>
+
+
+
+      </section>
+
 
 
     </td>
@@ -173,7 +212,40 @@
             </label>
 <p style="color:rgba(255,255,255,.6);padding-top:5px;">Rate flavorful</p>
 
-<div id="review2" style="font-size:22px;margin-top:-21px"></div>
+<section class='rating-widget'>
+
+  <!-- Rating Stars Box -->
+  <div class='rating-stars2 text-center' style="margin-top:-18px">
+    <ul id='stars2'>
+      <li class='star' title='Poor' data-value='1'>
+        <i class='fa fa-star fa-fw'></i>
+      </li>
+      <li class='star' title='Fair' data-value='2'>
+        <i class='fa fa-star fa-fw'></i>
+      </li>
+      <li class='star' title='Good' data-value='3'>
+        <i class='fa fa-star fa-fw'></i>
+      </li>
+      <li class='star' title='Excellent' data-value='4'>
+        <i class='fa fa-star fa-fw'></i>
+      </li>
+      <li class='star' title='WOW!!!' data-value='5'>
+        <i class='fa fa-star fa-fw'></i>
+      </li>
+    </ul>
+  </div>
+
+  <div class='success-box2'>
+    <div class='clearfix'></div>
+    <div class='text-message'>
+<input type="hidden" name="rate2" id="rate2" value="0"/></div>
+    </div>
+    <div class='clearfix'></div>
+  </div>
+
+
+
+</section>
 
 
 
@@ -191,7 +263,40 @@
 
 <p style="color:rgba(255,255,255,.6);padding-top:5px;">Rate flavorful</p>
 
-<div id="review3" style="font-size:22px;margin-top:-21px"></div>
+<section class='rating-widget'>
+
+  <!-- Rating Stars Box -->
+  <div class='rating-stars3 text-center' style="margin-top:-18px">
+    <ul id='stars3'>
+      <li class='star' title='Poor' data-value='1'>
+        <i class='fa fa-star fa-fw'></i>
+      </li>
+      <li class='star' title='Fair' data-value='2'>
+        <i class='fa fa-star fa-fw'></i>
+      </li>
+      <li class='star' title='Good' data-value='3'>
+        <i class='fa fa-star fa-fw'></i>
+      </li>
+      <li class='star' title='Excellent' data-value='4'>
+        <i class='fa fa-star fa-fw'></i>
+      </li>
+      <li class='star' title='WOW!!!' data-value='5'>
+        <i class='fa fa-star fa-fw'></i>
+      </li>
+    </ul>
+  </div>
+
+  <div class='success-box3'>
+    <div class='clearfix'></div>
+    <div class='text-message'>
+<input type="hidden" name="rate3" id="rate3" value="0"/></div>
+    </div>
+    <div class='clearfix'></div>
+  </div>
+
+
+
+</section>
           </div>
 
 
@@ -206,7 +311,40 @@
               <span class="checkbox-custom rectangular"></span>
           </label>
           <p style="color:rgba(255,255,255,.6);padding-top:5px;">Rate flavorful</p>
-<div id="review4" style="font-size:22px;margin-top:-21px"></div>
+          <section class='rating-widget'>
+
+            <!-- Rating Stars Box -->
+            <div class='rating-stars4 text-center' style="margin-top:-18px">
+              <ul id='stars4'>
+                <li class='star' title='Poor' data-value='1'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Fair' data-value='2'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Good' data-value='3'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='Excellent' data-value='4'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+                <li class='star' title='WOW!!!' data-value='5'>
+                  <i class='fa fa-star fa-fw'></i>
+                </li>
+              </ul>
+            </div>
+
+            <div class='success-box4'>
+              <div class='clearfix'></div>
+              <div class='text-message'>
+                <input type="hidden" name="rate4" id="rate4" value="0"/></div>
+              </div>
+              <div class='clearfix'></div>
+            </div>
+
+
+
+          </section>
           </div>
 
         <!-- <div class="clear"></div> -->
@@ -302,7 +440,7 @@
     <td class="table-info" style="vertical-align:middle">
       <div class="card2">
             <div class="checkbox-container">
-              <div class="input-title">Sign staff</div>
+              <div class="input-title">Toilets for the disabled</div>
             <label class="checkbox-label">
                 <input type="checkbox" id="sign_staff" name="sign_staff">
                 <span class="checkbox-custom rectangular"></span>
@@ -318,10 +456,10 @@
 </tbody>
 </table>
 <div class="form-group">
-  <center><blockquote class="blockquote text-center" style="margin-top:20px;width:17%;border-radius: 20px;background-color:rgba(0,0,0,0.3);padding:10px;margin-top:30px">
+  <center><blockquote class="blockquote text-center" id="block" style="margin-top:20px;border-radius: 20px;background-color:rgba(0,0,0,0.3);padding:10px;margin-top:30px">
     <center><p class="mb-0" style="font-size:18px;width:100%">Give your opinion</p></center>
   </blockquote></center>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+    <textarea class="form-control" id="useropinion" name="useropinion" rows="4"></textarea>
   </div>
 <center><input class="btn btn-lg btn-success btn-block text-uppercase" type="submit" style="width:400px;" value="Send your opinion"></center>
 </form>
@@ -330,109 +468,252 @@
 
 </center>
 
+
+
 </div>
 
 <a id="back2Top" title="Back to top" href="#">&#10148;</a>
+<script>
+$(document).ready(function(){
 
+  /* 1. Visualizing things on Hover - See next part for action on click */
+  $('#stars li').on('mouseover', function(){
+    var onStar = parseInt($(this).data('value'), 10); // The star currently mouse on
+
+    // Now highlight all the stars that's not after the current hovered star
+    $(this).parent().children('li.star').each(function(e){
+      if (e < onStar) {
+        $(this).addClass('hover');
+      }
+      else {
+        $(this).removeClass('hover');
+      }
+    });
+
+  }).on('mouseout', function(){
+    $(this).parent().children('li.star').each(function(e){
+      $(this).removeClass('hover');
+    });
+  });
+
+
+  /* 2. Action to perform on click */
+  $('#stars li').on('click', function(){
+    var onStar = parseInt($(this).data('value'), 10); // The star currently selected
+    var stars = $(this).parent().children('li.star');
+
+    for (i = 0; i < stars.length; i++) {
+      $(stars[i]).removeClass('selected');
+    }
+
+    for (i = 0; i < onStar; i++) {
+      $(stars[i]).addClass('selected');
+    }
+
+    // JUST RESPONSE (Not needed)
+    var ratingValue = parseInt($('#stars li.selected').last().data('value'), 10);
+    var msg = "";
+    if (ratingValue > 1) {
+        msg = "Thanks! You rated this " + ratingValue + " stars.";
+    }
+    else {
+        msg = "We will improve ourselves. You rated this " + ratingValue + " stars.";
+    }
+    responseMessage(msg,ratingValue);
+
+  });
+
+
+});
+
+
+function responseMessage(msg,ratingValue) {
+  $('.success-box').fadeIn(200);
+
+  $('.success-box div.text-message').html("<span>" + msg + "</span>"+"<input type="+'hidden'+" id="+'rate1'+" name="+'rate1'+" value="+ratingValue+">");
+}
+</script>
+<script>
+$(document).ready(function(){
+
+  /* 1. Visualizing things on Hover - See next part for action on click */
+  $('#stars2 li').on('mouseover', function(){
+    var onStar = parseInt($(this).data('value'), 10); // The star currently mouse on
+
+    // Now highlight all the stars that's not after the current hovered star
+    $(this).parent().children('li.star').each(function(e){
+      if (e < onStar) {
+        $(this).addClass('hover');
+      }
+      else {
+        $(this).removeClass('hover');
+      }
+    });
+
+  }).on('mouseout', function(){
+    $(this).parent().children('li.star').each(function(e){
+      $(this).removeClass('hover');
+    });
+  });
+
+
+  /* 2. Action to perform on click */
+  $('#stars2 li').on('click', function(){
+    var onStar = parseInt($(this).data('value'), 10); // The star currently selected
+    var stars = $(this).parent().children('li.star');
+
+    for (i = 0; i < stars.length; i++) {
+      $(stars[i]).removeClass('selected');
+    }
+
+    for (i = 0; i < onStar; i++) {
+      $(stars[i]).addClass('selected');
+    }
+
+    // JUST RESPONSE (Not needed)
+    var ratingValue = parseInt($('#stars2 li.selected').last().data('value'), 10);
+    var msg = "";
+    if (ratingValue > 1) {
+        msg = ratingValue;
+    }
+    else {
+        msg = ratingValue;
+    }
+    responseMessage2(msg,ratingValue);
+
+  });
+
+
+});
+
+
+function responseMessage2(msg,ratingValue) {
+  $('.success-box2').fadeIn(200);
+  $('.success-box2 div.text-message').html("<input type="+'hidden'+" id="+'rate2'+" name="+'rate2'+" value="+ratingValue+">");
+}
+</script>
+
+<script>
+$(document).ready(function(){
+
+  /* 1. Visualizing things on Hover - See next part for action on click */
+  $('#stars3 li').on('mouseover', function(){
+    var onStar = parseInt($(this).data('value'), 10); // The star currently mouse on
+
+    // Now highlight all the stars that's not after the current hovered star
+    $(this).parent().children('li.star').each(function(e){
+      if (e < onStar) {
+        $(this).addClass('hover');
+      }
+      else {
+        $(this).removeClass('hover');
+      }
+    });
+
+  }).on('mouseout', function(){
+    $(this).parent().children('li.star').each(function(e){
+      $(this).removeClass('hover');
+    });
+  });
+
+
+  /* 2. Action to perform on click */
+  $('#stars3 li').on('click', function(){
+    var onStar = parseInt($(this).data('value'), 10); // The star currently selected
+    var stars = $(this).parent().children('li.star');
+
+    for (i = 0; i < stars.length; i++) {
+      $(stars[i]).removeClass('selected');
+    }
+
+    for (i = 0; i < onStar; i++) {
+      $(stars[i]).addClass('selected');
+    }
+
+    // JUST RESPONSE (Not needed)
+    var ratingValue = parseInt($('#stars3 li.selected').last().data('value'), 10);
+    var msg = "";
+    if (ratingValue > 1) {
+        msg = ratingValue;
+    }
+    else {
+        msg = ratingValue;
+    }
+    responseMessage3(msg,ratingValue);
+
+  });
+
+
+});
+
+
+function responseMessage3(msg,ratingValue) {
+  $('.success-box3').fadeIn(200);
+  $('.success-box3 div.text-message').html("<input type="+'hidden'+" id="+'rate3'+" name="+'rate3'+" value="+ratingValue+">");
+}
+</script>
 
 
 <script>
-$(function(){
-  $("#review").rating();
-});
-$("#basic").rating({
-  "click": function (e) {
-    console.log(e); // {stars: 3, event: E.Event}
-    alert(e.stars); // 3
-  }
-});
+$(document).ready(function(){
 
-$("#basic").rating({
-  "color": "#222"
+  /* 1. Visualizing things on Hover - See next part for action on click */
+  $('#stars4 li').on('mouseover', function(){
+    var onStar = parseInt($(this).data('value'), 10); // The star currently mouse on
 
-});
-$("#basic").rating({
-  "emptyStar": "far fa-star",
-  "halfStar": "fas fa-star-half-alt",
-  "filledStar": "fas fa-star"
+    // Now highlight all the stars that's not after the current hovered star
+    $(this).parent().children('li.star').each(function(e){
+      if (e < onStar) {
+        $(this).addClass('hover');
+      }
+      else {
+        $(this).removeClass('hover');
+      }
+    });
 
-});
-
-
-</script>
-<script>
-$(function(){
-  $("#review4").rating();
-});
-$("#basic").rating({
-  "click": function (e) {
-    console.log(e); // {stars: 3, event: E.Event}
-    alert(e.stars); // 3
-  }
-});
-
-$("#basic").rating({
-  "color": "#222"
-
-});
-$("#basic").rating({
-  "emptyStar": "far fa-star",
-  "halfStar": "fas fa-star-half-alt",
-  "filledStar": "fas fa-star"
-
-});
+  }).on('mouseout', function(){
+    $(this).parent().children('li.star').each(function(e){
+      $(this).removeClass('hover');
+    });
+  });
 
 
-</script>
-<script>
-$(function(){
-  $("#review2").rating();
-});
-$("#basic").rating({
-  "click": function (e) {
-    console.log(e); // {stars: 3, event: E.Event}
-    alert(e.stars); // 3
-  }
-});
+  /* 2. Action to perform on click */
+  $('#stars4 li').on('click', function(){
+    var onStar = parseInt($(this).data('value'), 10); // The star currently selected
+    var stars = $(this).parent().children('li.star');
 
-$("#basic").rating({
-  "color": "#222"
+    for (i = 0; i < stars.length; i++) {
+      $(stars[i]).removeClass('selected');
+    }
 
-});
-$("#basic").rating({
-  "emptyStar": "far fa-star",
-  "halfStar": "fas fa-star-half-alt",
-  "filledStar": "fas fa-star"
+    for (i = 0; i < onStar; i++) {
+      $(stars[i]).addClass('selected');
+    }
+
+    // JUST RESPONSE (Not needed)
+    var ratingValue = parseInt($('#stars4 li.selected').last().data('value'), 10);
+    var msg = "0";
+    if (ratingValue > 1) {
+        msg = ratingValue;
+    }
+    else {
+        msg = ratingValue;
+    }
+    responseMessage4(msg,ratingValue);
+
+  });
+
 
 });
 
 
+function responseMessage4(msg,ratingValue) {
+  $('.success-box4').fadeIn(200);
+$('.success-box4 div.text-message').html("<input type="+'hidden'+" id="+'rate4'+" name="+'rate4'+" value="+ratingValue+">");
+}
 </script>
 
-<script>
-$(function(){
-  $("#review3").rating();
-});
-$("#basic").rating({
-  "click": function (e) {
-    console.log(e); // {stars: 3, event: E.Event}
-    alert(e.stars); // 3
-  }
-});
-
-$("#basic").rating({
-  "color": "#222"
-
-});
-$("#basic").rating({
-  "emptyStar": "far fa-star",
-  "halfStar": "fas fa-star-half-alt",
-  "filledStar": "fas fa-star"
-
-});
-
-
-</script>
 <script>
 $(function () {
   $('[data-toggle="popover"]').popover()

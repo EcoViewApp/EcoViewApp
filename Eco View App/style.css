@@ -53,3 +53,40 @@ body{
 
 .starrating > input:hover ~ label
 { color: #ffca08 ;  } /* Set yellow color when star hover */
+
+
+@media only screen and (max-width: 2000px) {
+  #checkcard{
+    width: 40rem;
+  }
+  #cardimg
+  {
+    width:368px;
+    height:246px;
+  }
+
+}
+@media only screen and (max-width: 1000px) {
+  #checkcard{
+    width: 40rem;
+  }
+  #cardimg
+  {
+    width:368px;
+    height:246px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+
+
+  #checkcard{
+    width: 29rem;
+  }
+  #cardimg
+  {
+    width:280px;
+    height:200px;
+  }
+
+}
